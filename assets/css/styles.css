@@ -104,6 +104,152 @@ html {
     margin-left: 1rem;
 }
 
+/* Booking Page */
+
+/* Booking Header */
+.booking-container {
+    background: linear-gradient(90deg, rgba(97,94,185,1) 0%, rgba(72,71,165,1) 35%, rgba(97,94,185,1) 100%);
+    min-height: 100vh;
+    min-width: 100vw;
+    padding: 1rem;
+}
+
+.booking-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.booking-header div {
+    display: flex;
+    align-items: center;
+}
+
+.booking-header__img {
+    width: 6rem;
+    height: 6rem;
+    border: 2px solid white;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.booking-header__title {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.booking-header__total {
+    color: white;
+    padding: 1rem;
+    border: 1px solid #9a83da;
+    border-radius: .5rem;
+}
+
+/* Screen */
+.screen {
+    width: 100%; 
+    height: 8rem;  
+    border: 5px solid white;
+    border-color: white transparent transparent transparent;
+    border-radius: 80%/100px 100px 0px 0px;
+    margin: 0 auto;
+}
+
+/* Booking Legend */
+.booking-legend {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    margin-top: -2rem;
+}
+
+.legend-key {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seat {
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: .3rem;
+}
+
+.seat-booked {
+    background-color: #8E7DC9;
+}
+
+.seat-selected {
+    background-color: white;
+}
+
+.seat-available {
+    background-color: none;
+    border: 1px solid white;
+}
+
+.legend-key h2 {
+    color: white;
+    font-size: 1.25rem;
+    margin-top: .5rem;
+}
+
+/* Seating */
+.seating {
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.seat {
+    margin: .5rem;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.seat:hover {
+    transform: scale(1.4);
+    transition: .3s ease;
+}
+
+.seat:nth-of-type(3) {
+    margin-right: 3rem;
+}
+
+.seat:nth-last-of-type(3) {
+    margin-left: 3rem;
+}
+
+
+.row:nth-of-type(5) {
+    margin-bottom: 2rem;
+}
+
+.row:nth-last-of-type(3) {
+    margin-top: 2rem;
+}
+
+.payment-btn {
+    display: block;
+    width: 70%;
+    margin: 1rem auto;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
 /* Footer */
 footer {
     padding: 1.5rem;
