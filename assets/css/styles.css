@@ -1,0 +1,118 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+/* Header */
+.main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+    background: linear-gradient(90deg, rgba(97,94,185,1) 0%, rgba(72,71,165,1) 35%, rgba(97,94,185,1) 100%);
+    border-radius: 0 0 5rem 5rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.main-header__title {
+    font-family: 'Acme', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.main-header__title i {
+    margin-right: .5rem;
+}
+
+.main-header__slogan {
+    font-size: 1.3rem;
+}
+
+/* Movies List */
+.movies-list {
+    padding: 1rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Movie Card Container */
+.movie-container {
+    display: flex;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 2rem;
+    transition: transform .3s ease;
+    cursor: pointer;
+    font-weight: 300;
+    margin: 2rem 0;
+}
+
+.movie-container:hover {
+    transform: scale(1.05);
+    transition: transform .3s ease;
+}
+
+.movie-poster {
+    background: url('https://i.etsystatic.com/17139775/r/il/2a5f47/1852994100/il_570xN.1852994100_b7bp.jpg') center center/cover;
+    height: 18rem;
+    width: 18rem;
+    border-radius: 1.25rem;
+}
+
+.movie-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    padding: 2rem;
+}
+
+.movie-title {
+    font-size: 1.75rem;
+    font-weight: 400;
+    word-break: break-word;
+}
+
+.movie-rating {
+    font-size: 1.35rem;
+}
+
+.movie-rating i {
+    color: #FE7E61;
+    margin-right: -.5rem;
+}
+
+.movie-genre {
+    display: flex;
+}
+
+.genre {
+    background-color: #EEEEF8;
+    color: #5c5b67;
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+}
+
+.genre:not(:first-child) {
+    margin-left: 1rem;
+}
+
+/* Footer */
+footer {
+    padding: 1.5rem;
+    background-color: #615eb9;
+    text-align: center;
+    color: white;
+    border-radius: 2rem 2rem 0 0;
+}
+
+footer p {
+    font-size: 1.5rem;
+}
