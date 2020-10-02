@@ -60,7 +60,7 @@ html {
 }
 
 .movie-poster {
-    background: url('https://i.etsystatic.com/17139775/r/il/2a5f47/1852994100/il_570xN.1852994100_b7bp.jpg') center center/cover;
+    /* background: url('https://i.etsystatic.com/17139775/r/il/2a5f47/1852994100/il_570xN.1852994100_b7bp.jpg') center center/cover; */
     height: 18rem;
     width: 18rem;
     border-radius: 1.25rem;
@@ -80,23 +80,32 @@ html {
     word-break: break-word;
 }
 
+.movie-rating-wrapper {
+    display: flex;
+    align-items: center;
+}
+
 .movie-rating {
     font-size: 1.35rem;
 }
 
-.movie-rating i {
+.movie-rating-wrapper i {
+    font-size: 1.5rem;
     color: #FE7E61;
-    margin-right: -.5rem;
+    margin-right: .5rem;
 }
 
 .movie-genre {
     display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .genre {
     background-color: #EEEEF8;
     color: #5c5b67;
     padding: .5rem 1rem;
+    margin: .5rem;
     border-radius: 1rem;
 }
 
