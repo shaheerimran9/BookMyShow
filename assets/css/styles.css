@@ -155,13 +155,14 @@ html {
     padding: 1rem;
     border: 1px solid #9a83da;
     border-radius: .5rem;
+    text-align: center;
 }
 
 /* Screen */
 .screen {
     width: 100%; 
     height: 8rem;  
-    border: 5px solid white;
+    border: 7px solid white;
     border-color: white transparent transparent transparent;
     border-radius: 80%/100px 100px 0px 0px;
     margin: 0 auto;
@@ -183,9 +184,12 @@ html {
 }
 
 .seat {
-    width: 1.6rem;
-    height: 1.6rem;
+    width: 1.7rem;
+    height: 1.7rem;
+    margin: .5rem;
     border-radius: .3rem;
+    cursor: pointer;
+    transition: .3s ease;
 }
 
 .seat-booked {
@@ -218,13 +222,7 @@ html {
     justify-content: center;
 }
 
-.seat {
-    margin: .5rem;
-    cursor: pointer;
-    transition: .3s ease;
-}
-
-.seat:hover {
+.seat:hover:not(.seat-booked) {
     transform: scale(1.4);
     transition: .3s ease;
 }
@@ -259,6 +257,45 @@ html {
     text-align: center;
 }
 
+/* Confirmation Page */
+.confirmation {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.confirmation > * {
+    margin-bottom: 1.3rem;
+}
+
+.confirmation__img {
+    margin-bottom: 3.5rem;
+}
+
+.confirmation__heading {
+    font-size: 2.5rem;
+}
+
+.confirmation__subheading {
+    font-size: 1.5rem;
+}
+
+.redirect-btn {
+    display: block;
+    width: 80%;
+    margin: 1rem auto;
+    padding: 1.5rem 1rem;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    background-color: #615eb9;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
 /* Footer */
 footer {
     padding: 1.5rem;
@@ -270,4 +307,29 @@ footer {
 
 footer p {
     font-size: 1.5rem;
+}
+
+/* Media Queries */
+@media (min-width: 760px) {
+    .movies-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .movie-container {
+        margin: 2rem;
+    }
+    
+    .seat {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .payment-btn {
+        width: 30%;
+    }
+
+    .redirect-btn {
+        width: 50%;
+    }
 }
